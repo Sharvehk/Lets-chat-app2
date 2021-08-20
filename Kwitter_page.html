@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Kwitter</title>
+        <link href="https://fonts.googleapis.com/css?family=Yeon+Sung&display=swap" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="Kitter.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <br>
+            <button id="logout" class="btn btn-danger" style = " margin-left: 1000;" onclick="logout()"><h4><i class="glyphicon glyphicon-log-out "></i>&nbsp;Logout</h4></button>
+            <center>
+                <h1 class="header white">
+                    Kwitter <sup><img src="m2.png" width="10.%"></sup>
+                </h1>
+                <h3 class="white" id="username"></h3>
+               <br>
+               <br>
+            </center>
+            <center>
+                <div class="Room_name_input">
+                 <label class="white">
+                      Add a room				
+                 </label>
+                 <input class="form-control blue" id="msg" placeholder="Room Name" style="width: 65%;">
+                 <br>
+                 <button class="btn btn-info" onclick="add_room()">Add Room</button>
+                </div>
+                <br>
+                <br>
+                <h3 class="white">Trending Rooms</h3>
+                <br>    
+                <div id="output">
+			
+                </div>
+            </center>   
+        </div>  
+        <script src="Kwitter_page.js"></script>
+    </body>
+</html>
